@@ -1,6 +1,7 @@
-dep_rte_lpm.o = /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.c \
+dep_rte_lpm.o = \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.c \
  /usr/include/stdc-predef.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
  /usr/include/string.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -27,8 +28,8 @@ dep_rte_lpm.o = /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.c \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  /usr/include/x86_64-linux-gnu/sys/queue.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
@@ -48,51 +49,51 @@ dep_rte_lpm.o = /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.c \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memory.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/exec-env/rte_dom0_common.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_malloc.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memzone.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_eal.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memory.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/exec-env/rte_dom0_common.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_malloc.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memzone.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_eal.h \
  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_per_lcore.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_per_lcore.h \
  /usr/include/pthread.h /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_eal_memconfig.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_tailq.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_debug.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_malloc_heap.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_spinlock.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_spinlock.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_lcore.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_launch.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_pause.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_eal_memconfig.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_tailq.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_debug.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_malloc_heap.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_spinlock.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_spinlock.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_lcore.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_launch.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_pause.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_rtm.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_cpuflags.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_cpuflags.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_rwlock.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_rwlock.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_atomic.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic_64.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_spinlock.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_string_fns.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_errno.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_byteorder.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder_64.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_vect.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_vect.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_rtm.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_cpuflags.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_cpuflags.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_rwlock.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_rwlock.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_atomic.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic_64.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_spinlock.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_string_fns.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_errno.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_byteorder.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder_64.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_vect.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_vect.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/x86intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/ia32intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/pmmintrin.h \
@@ -142,6 +143,6 @@ dep_rte_lpm.o = /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.c \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/xsavesintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/xsavecintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/mwaitxintrin.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_compat.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm_sse.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_lpm.h
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_compat.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm_sse.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_lpm/rte_lpm.h

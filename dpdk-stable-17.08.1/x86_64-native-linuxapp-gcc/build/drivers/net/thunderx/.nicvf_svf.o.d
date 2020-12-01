@@ -1,15 +1,15 @@
 dep_nicvf_svf.o = \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/thunderx/nicvf_svf.c \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/thunderx/nicvf_svf.c \
  /usr/include/stdc-predef.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
  /usr/include/assert.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_debug.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_debug.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -18,7 +18,7 @@ dep_nicvf_svf.o = \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -42,11 +42,11 @@ dep_nicvf_svf.o = \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_malloc.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memory.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/exec-env/rte_dom0_common.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/thunderx/base/nicvf_bsvf.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_malloc.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memory.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/exec-env/rte_dom0_common.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/thunderx/base/nicvf_bsvf.h \
  /usr/include/x86_64-linux-gnu/sys/queue.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/thunderx/nicvf_svf.h
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/thunderx/nicvf_svf.h

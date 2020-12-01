@@ -1,1 +1,1 @@
-/home/user/dpdk/dpdk-stable-17.08.1/lib/librte_eal/linuxapp/kni/kni_misc.c
+/home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_eal/linuxapp/kni/kni_misc.c

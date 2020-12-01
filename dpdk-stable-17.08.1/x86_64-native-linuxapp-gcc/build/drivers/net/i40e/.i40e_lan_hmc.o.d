@@ -1,8 +1,8 @@
 dep_i40e_lan_hmc.o = \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_lan_hmc.c \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_lan_hmc.c \
  /usr/include/stdc-predef.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_osdep.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_osdep.h \
  /usr/include/string.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -25,7 +25,7 @@ dep_i40e_lan_hmc.o = \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
@@ -48,9 +48,9 @@ dep_i40e_lan_hmc.o = \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memcpy.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_vect.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_vect.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_memcpy.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_vect.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_vect.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/x86intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/ia32intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h \
@@ -104,47 +104,47 @@ dep_i40e_lan_hmc.o = \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/xsavesintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/xsavecintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/mwaitxintrin.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_byteorder.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder_64.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_cycles.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_cycles.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_debug.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_atomic.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic_64.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_spinlock.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_spinlock.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_lcore.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_per_lcore.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_byteorder.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_byteorder_64.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_cycles.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_cycles.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_debug.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_atomic.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_atomic_64.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_spinlock.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_spinlock.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_lcore.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_per_lcore.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_eal.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_launch.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_pause.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_rtm.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_cpuflags.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_cpuflags.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_io.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_io.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/../i40e_logs.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_register.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_type.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_status.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_adminq.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_adminq_cmd.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_hmc.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_lan_hmc.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_devids.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_prototype.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_alloc.h \
- /home/user/dpdk/dpdk-stable-17.08.1/drivers/net/i40e/base/virtchnl.h
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_eal.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_launch.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_pause.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_rtm.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_cpuflags.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_cpuflags.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_common.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_pause.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_log.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_io.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/generic/rte_io.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/../i40e_logs.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_register.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_type.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_status.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_adminq.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_adminq_cmd.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_hmc.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_lan_hmc.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_devids.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_prototype.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/i40e_alloc.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/drivers/net/i40e/base/virtchnl.h

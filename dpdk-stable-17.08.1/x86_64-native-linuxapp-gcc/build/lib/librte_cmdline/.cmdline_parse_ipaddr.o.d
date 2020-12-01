@@ -1,7 +1,7 @@
 dep_cmdline_parse_ipaddr.o = \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse_ipaddr.c \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse_ipaddr.c \
  /usr/include/stdc-predef.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -52,7 +52,7 @@ dep_cmdline_parse_ipaddr.o = \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_string_fns.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse_ipaddr.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/cmdline_parse.h
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_string_fns.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse_ipaddr.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse.h

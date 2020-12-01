@@ -1,7 +1,7 @@
 dep_cmdline_socket.o = \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_socket.c \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_socket.c \
  /usr/include/stdc-predef.h \
- /home/user/dpdk/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -48,12 +48,12 @@ dep_cmdline_socket.o = \
  /usr/include/x86_64-linux-gnu/bits/fcntl2.h /usr/include/termios.h \
  /usr/include/x86_64-linux-gnu/bits/termios.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_rdline.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_cirbuf.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_vt100.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_socket.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_rdline.h \
- /home/user/dpdk/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline.h
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_rdline.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_cirbuf.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_vt100.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_socket.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_parse.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline_rdline.h \
+ /home/user/dpdk-switch/dpdk-stable-17.08.1/lib/librte_cmdline/cmdline.h
