@@ -88,16 +88,6 @@ app_l2_lookup(const struct ether_addr* addr) {
             rte_hash_del_key(app.l2_hash, addr);
             return -1;
         }
-        /*struct timeval now_time, intv_time;
-        gettimeofday(&now_time, NULL);
-        timersub(&now_time, &app.fwd_table[index].timestamp, &intv_time);
-        long intv_time_us = intv_time.tv_sec * 1000 * 1000 + intv_time.tv_usec;
-        if (intv_time_us / 1000 < VALID_TIME) {
-            return app.fwd_table[index].port_id;
-        } else {
-            rte_hash_del_key(app.l2_hash, addr);
-            return -1;
-        }*/
     }
     return -1;
 }
@@ -109,6 +99,8 @@ app_main_loop_forwarding(void) {
     struct rte_mbuf* new_pkt;
     uint32_t i, j;
     int dst_port;
+    struct ipv4_hdr *pkt_ip;
+    uint8_t tos;
 
     RTE_LOG(INFO, SWITCH, "Core %u is doing forwarding\n",
         rte_lcore_id());
@@ -134,19 +126,22 @@ app_main_loop_forwarding(void) {
         return ;
     }
 
-    for (i = 0; !force_quit; i = ((i + 1) & (app.n_ports - 1))) {
+    for (i = 0; !force_quit; i = ((i + 1) & (app.n_ports - 1))) 
+    {
         int ret;
-
-        /*ret = rte_ring_sc_dequeue_bulk(
-            app.rings_rx[i],
-            (void **) worker_mbuf->array,
-            app.burst_size_worker_read);*/
         ret = rte_ring_sc_dequeue(
             app.rings_rx[i],
             (void **) worker_mbuf->array);
 
         if (ret == -ENOENT)
             continue;
+
+        pkt_ip = rte_pktmbuf_mtod_offset(
+            worker_mbuf->array[0], 
+            struct ipv4_hdr *, 
+            sizeof(struct ether_hdr)
+        );
+        tos = pkt_ip->type_of_service;
 
         // l2 learning
         eth = rte_pktmbuf_mtod(worker_mbuf->array[0], struct ether_hdr*);
@@ -157,17 +152,15 @@ app_main_loop_forwarding(void) {
         if (dst_port < 0) { /* broadcast */
             RTE_LOG(DEBUG, SWITCH, "%s: broadcast packets\n", __func__);
             for (j = 0; j < app.n_ports; j++) {
+                if (tos > 0x4)
+                    ++ app.num_long[j];
                 if (j == i) {
                     continue;
                 } else if (j == (i ^ 1)) {
-                    packet_enqueue(j, worker_mbuf->array[0]);
+                    packet_enqueue(j, worker_mbuf->array[0], tos);
                 } else {
                     new_pkt = rte_pktmbuf_clone(worker_mbuf->array[0], app.pool);
-                    packet_enqueue(j, new_pkt);
-                    /*rte_ring_sp_enqueue(
-                        app.rings_tx[j],
-                        new_pkt
-                    );*/
+                    packet_enqueue(j, new_pkt, tos);
                 }
             }
         } else {
@@ -176,18 +169,10 @@ app_main_loop_forwarding(void) {
                 "%s: forward packet to %d\n",
                 __func__, app.ports[dst_port]
             );
-            packet_enqueue(dst_port, worker_mbuf->array[0]);
-            /*rte_ring_sp_enqueue(
-                app.rings_tx[dst_port],
-                worker_mbuf->array[0]
-            );*/
+            if (tos > 0x4)
+                ++ app.num_long[dst_port];
+            packet_enqueue(dst_port, worker_mbuf->array[0], tos);
         }
-
-        /*do {
-            ret = rte_ring_sp_enqueue_bulk(
-                app.rings_tx[i ^ 1],
-                (void **) worker_mbuf->array,
-                app.burst_size_worker_write);
-        } while (ret < 0);*/
     }
 }
+

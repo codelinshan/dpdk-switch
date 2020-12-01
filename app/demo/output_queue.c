@@ -76,7 +76,8 @@ int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt, uint8_t tos) {
 
         app.qlen_pkts_in[dst_port] -= 1;
         app.qlen_bytes_in[dst_port] -= mbufs[deq_ret-1]->pkt_len;
-        ret = 0;     
+        ret = 0; 
+        ++app.num_drop[dst_port];    
     }
 
     if (ret == 0) 
@@ -123,7 +124,16 @@ int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt, uint8_t tos) {
         }
     } else {
         rte_pktmbuf_free(pkt);
+        if (tos > 0x4)
+            ++app.num_drop[dst_port];
     }
+
+    if (app.num_long[dst_port] > 1000000) {
+        printf("Port : %u      Num_drop : %u \n", app.ports[dst_port], app.num_drop[dst_port]);
+        app.num_long[dst_port] = 0;
+        app.num_drop[dst_port] = 0;
+    }
+
     switch (ret) {
     case 0:
         RTE_LOG(

@@ -178,6 +178,8 @@ app_init_rings(void) {
             rte_panic("Cannot create LONG ring %u\n", i);
         
         app.qd[i] = 0.0;
+        app.num_drop[i] = 0;
+        app.num_long[i] = 0;
     }
 }
 

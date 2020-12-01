@@ -138,6 +138,8 @@ extern volatile bool force_quit;
 struct app_params {
     /* Queueing delay */
     double qd[APP_MAX_PORTS];
+    uint32_t num_drop[APP_MAX_PORTS];
+    uint32_t num_long[APP_MAX_PORTS];
 
     uint64_t cpu_freq[RTE_MAX_LCORE];
     uint64_t start_cycle;
@@ -266,7 +268,7 @@ uint32_t get_buff_occu_bytes(void);
  *  0: succeed, < 0: packet dropped
  *  -1: queue length > threshold, -2: buffer overflow, -3: other unknown reason
 */
-int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt);
+int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt, uint8_t tos);
 
 /*
  * Get port qlen threshold for a port

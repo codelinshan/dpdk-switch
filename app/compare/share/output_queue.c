@@ -25,20 +25,12 @@ uint32_t get_buff_occu_bytes(void) {
     return result;
 }
 
-int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt) {
+int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt, uint8_t tos) {
     int ret = 0;
     uint32_t qlen_bytes = get_qlen_bytes(dst_port);
     uint32_t threshold = 0;
     uint32_t qlen_enque = qlen_bytes + pkt->pkt_len;
     uint32_t buff_occu_bytes = 0;
-    struct ipv4_hdr *pkt_ip;
-    uint8_t tos;
-    pkt_ip = rte_pktmbuf_mtod_offset(
-        pkt, 
-        struct ipv4_hdr *, 
-        sizeof(struct ether_hdr)
-    );
-    tos = pkt_ip->type_of_service;
 
     /*Check whether buffer overflows after enqueue*/
     if (app.shared_memory) {
@@ -56,7 +48,7 @@ int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt) {
     if (ret == 0) 
     {
         int enq_ret;
-        if (tos > 0x04) {
+        if (tos > 0x4) {
             enq_ret = rte_ring_sp_enqueue(
                 app.rings_long[dst_port],
                 pkt
@@ -97,7 +89,16 @@ int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt) {
         }
     } else {
         rte_pktmbuf_free(pkt);
+        if (tos > 0x4)
+            ++app.num_drop[dst_port];
     }
+
+    if (app.num_long[dst_port] > 1000000) {
+        printf("Port : %u      Num_drop : %u \n", app.ports[dst_port], app.num_drop[dst_port]);
+        app.num_long[dst_port] = 0;
+        app.num_drop[dst_port] = 0;
+    }
+
     switch (ret) {
     case 0:
         RTE_LOG(

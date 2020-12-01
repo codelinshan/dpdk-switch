@@ -33,22 +33,5 @@ app_main_loop_rx(void) {
                 (void **) app.mbuf_rx.array,
                 n_mbufs, NULL);
         } while (ret == 0);
-
-        struct ipv4_hdr *pkt_ip;
-        uint8_t tos;
-        int k;
-        for (k = 0; k < ret; ++k) {
-            pkt_ip = rte_pktmbuf_mtod_offset(
-                app.mbuf_rx.array[k], 
-                struct ipv4_hdr *, 
-                sizeof(struct ether_hdr)
-            );
-            tos = pkt_ip->type_of_service;
-            if (tos > 0x4) 
-                ++app.num_long[i];
-        }
-
-        // if (i == 1)
-        //     printf("**** Rx num: %d\n", ret);
     }
 }
