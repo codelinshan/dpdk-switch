@@ -93,11 +93,11 @@ int packet_enqueue(uint32_t dst_port, struct rte_mbuf *pkt, uint8_t tos) {
             ++app.num_drop[dst_port];
     }
 
-    if (app.num_long[dst_port] > 1000000) {
-        printf("Port : %u      Num_drop : %u \n", app.ports[dst_port], app.num_drop[dst_port]);
-        app.num_long[dst_port] = 0;
-        app.num_drop[dst_port] = 0;
-    }
+    // if (app.num_long[dst_port] > 1000000) {
+    //     printf("Port : %u      Num_drop : %u \n", app.ports[dst_port], app.num_drop[dst_port]);
+    //     app.num_long[dst_port] = 0;
+    //     app.num_drop[dst_port] = 0;
+    // }
 
     switch (ret) {
     case 0:
