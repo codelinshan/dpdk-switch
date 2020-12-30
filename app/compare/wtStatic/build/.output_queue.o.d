@@ -1,7 +1,8 @@
-dep_output_queue.o = /home/user/dpdk-switch/app/compare/share/output_queue.c \
+dep_output_queue.o = \
+ /home/user/dpdk-switch/app/compare/wtStatic/output_queue.c \
  /usr/include/stdc-predef.h \
  /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
- /home/user/dpdk-switch/app/compare/share/main.h /usr/include/stdio.h \
+ /home/user/dpdk-switch/app/compare/wtStatic/main.h /usr/include/stdio.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \

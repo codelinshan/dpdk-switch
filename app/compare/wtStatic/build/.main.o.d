@@ -1,4 +1,4 @@
-dep_main.o = /home/user/dpdk-switch/app/compare/share/main.c \
+dep_main.o = /home/user/dpdk-switch/app/compare/wtStatic/main.c \
  /usr/include/stdc-predef.h \
  /home/user/dpdk-switch/dpdk-stable-17.08.1/x86_64-native-linuxapp-gcc/include/rte_config.h \
  /usr/include/signal.h /usr/include/features.h \
@@ -18,7 +18,7 @@ dep_main.o = /home/user/dpdk-switch/app/compare/share/main.c \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /home/user/dpdk-switch/app/compare/share/main.h /usr/include/stdio.h \
+ /home/user/dpdk-switch/app/compare/wtStatic/main.h /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
